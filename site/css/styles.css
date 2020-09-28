@@ -3,8 +3,24 @@ body {
 	margin: auto;
 	font-family: sans-serif;
 }
+
 .header {
 	size: 24px;
 	text-align: center;
 	margin-top: 30%;
+}
+
+.btn-change-theme {
+	width: 90px; 
+    margin: auto; 
+}
+
+.btn-change-theme button{
+	border: none; 
+	border-radius: 5px;
+}
+
+.dark-theme {
+	background-color: black;
+	color: white;
 }
