@@ -21,6 +21,7 @@ body {
 	height: 30px;
 	border: none; 
 	border-radius: 5px;
+	outline: none;
 }
 
 .dark-theme {
