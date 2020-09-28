@@ -9,7 +9,7 @@ body {
 	text-align: center;
 	margin-top: 30%;
 }
-
+/* start button change theme */
 .btn-change-theme {
 	width: 90px; 
     margin: auto; 
@@ -28,3 +28,21 @@ body {
 	background-color: black;
 	color: white;
 }
+/* end button change theme */
+/* start progress bar*/
+.progress {
+	width: 300px;
+	height: 30px;
+	/*border: 2px solid red;*/	
+	margin: auto;
+	padding-right: 180px;
+}
+
+.progress progress  {
+	width: 161%;
+ 	background-color: #eee;	
+ 	border: 0;
+ 	height: 18px;
+	border-radius: 9px;
+}
+/* end progress bar */
