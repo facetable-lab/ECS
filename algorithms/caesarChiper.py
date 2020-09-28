@@ -11,7 +11,7 @@ def encodeMessage(text, key):
             encodedMsg += letter
     return encodedMsg
 
-#This function decode the message
+#This function decode the message mjqqt, rd sfrj nx irnywd
 def decodeMessage(encMsg, key):
     decodedMsg = ''
     for letter in encMsg:

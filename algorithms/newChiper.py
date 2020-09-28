@@ -1,7 +1,7 @@
 alphabet = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
 
-text = input()
-key = input()
+text = input('Enter you text for encrypt: ')
+key = input('Enter key: ')
 
 def keyToText(text, key):
     keyFinaly = ''
@@ -36,14 +36,42 @@ def getNumbersOfKey(key):
     return numbersKey
 
 def encodeMsg(text, key):
+    text.lower()
     a = keyToText(text, key)
-    b = keyToMassive(key)
     c = getNumbersOfText(text)
     d = getNumbersOfKey(a)
-    print(a)
-    print(b)
+    sum = []
+    encodeMessage = ''
+    for i in range(len(text)):
+        sum.append(c[i] + d[i])
+    for i in range(len(text)):
+        encodeMessage = encodeMessage + alphabet[sum[i] - 1]
     print(c)
     print(d)
-    
+    return encodeMessage
+
+def decodeMsg(encText, key):
+    encText.lower()
+    a = keyToText(encodeMsg(text, key), key)
+    c = getNumbersOfText(encodeMsg(text, key))
+    d = getNumbersOfKey(a)
+    deSum = []
+    decodeMessage = ''
+    counter = 0
+    for i in range(len(encText)):
+        deSum.append(c[i] - d[i])
+    for i in encText:
+        if alphabet.find(i) != -1:
+            decodeMessage = decodeMessage + alphabet[deSum[counter] - 1]
+        else:
+            decodeMessage += i
+        counter += 1
+
+    print(c)
+    print(d)
+    return decodeMessage
+
 end = encodeMsg(text, key)
-print(end)
+dec = decodeMsg(text, key)
+print('Encoded msg: ', end)
+print('Decoded msg: ', dec)
