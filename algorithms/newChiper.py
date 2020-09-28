@@ -3,6 +3,7 @@ alphabet = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
 text = input('Enter you text for encrypt: ')
 key = input('Enter key: ')
 
+
 def keyToText(text, key):
     keyFinaly = ''
     counter = 0
@@ -14,8 +15,9 @@ def keyToText(text, key):
             counter = 0
         if len(keyFinaly) == len(text):
             break
-        
+
     return keyFinaly
+
 
 def keyToMassive(key):
     mass = []
@@ -23,17 +25,20 @@ def keyToMassive(key):
         mass += letter
     return mass
 
+
 def getNumbersOfText(text):
     numbersText = []
     for letter in text:
         numbersText.append(alphabet.find(letter) + 1)
     return numbersText
 
+
 def getNumbersOfKey(key):
     numbersKey = []
     for letter in key:
         numbersKey.append(alphabet.find(letter) + 1)
     return numbersKey
+
 
 def encodeMsg(text, key):
     text.lower()
@@ -49,6 +54,7 @@ def encodeMsg(text, key):
     print(c)
     print(d)
     return encodeMessage
+
 
 def decodeMsg(encText, key):
     encText.lower()
@@ -70,6 +76,7 @@ def decodeMsg(encText, key):
     print(c)
     print(d)
     return decodeMessage
+
 
 end = encodeMsg(text, key)
 dec = decodeMsg(text, key)

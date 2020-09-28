@@ -1,6 +1,7 @@
 alphabet = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
 
-#This function encode the message
+
+# This function encode the message
 def encodeMessage(text, key):
     encodedMsg = ''
     for letter in text:
@@ -11,7 +12,8 @@ def encodeMessage(text, key):
             encodedMsg += letter
     return encodedMsg
 
-#This function decode the message mjqqt, rd sfrj nx irnywd
+
+# This function decode the message mjqqt, rd sfrj nx irnywd
 def decodeMessage(encMsg, key):
     decodedMsg = ''
     for letter in encMsg:
