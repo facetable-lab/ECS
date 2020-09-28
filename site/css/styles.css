@@ -13,9 +13,12 @@ body {
 .btn-change-theme {
 	width: 90px; 
     margin: auto; 
+    margin-left: 32%;
 }
 
 .btn-change-theme button{
+	width: 540%;
+	height: 30px;
 	border: none; 
 	border-radius: 5px;
 }
