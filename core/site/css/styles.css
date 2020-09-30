@@ -1,0 +1,48 @@
+body {
+	width: 70%;
+	margin: auto;
+	font-family: sans-serif;
+}
+
+.header {
+	size: 24px;
+	text-align: center;
+	margin-top: 30%;
+}
+/* start button change theme */
+.btn-change-theme {
+	width: 90px; 
+    margin: auto; 
+    margin-left: 32%;
+}
+
+.btn-change-theme button{
+	width: 540%;
+	height: 30px;
+	border: none; 
+	border-radius: 5px;
+	outline: none;
+}
+
+.dark-theme {
+	background-color: black;
+	color: white;
+}
+/* end button change theme */
+/* start progress bar*/
+.progress {
+	width: 300px;
+	height: 30px;
+	/*border: 2px solid red;*/	
+	margin: auto;
+	padding-right: 180px;
+}
+
+.progress progress  {
+	width: 161%;
+ 	background-color: #eee;	
+ 	border: 0;
+ 	height: 18px;
+	border-radius: 9px;
+}
+/* end progress bar */
