@@ -1,4 +1,4 @@
-alphabet = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz'
+alphabet = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz0123456789'
 
 text = input('Enter you text for encrypt: ')
 key = input('Enter key: ')
