@@ -1,9 +1,9 @@
-vvod = input('in: ')
-if len(vvod) > 1:
+inp = input('in: ')
+if len(inp) > 1:
     count = 1
     prev = ''
     lst = []
-    for i in vvod:
+    for i in inp:
         if i != prev:
             if prev:
                 entry = ''
@@ -23,4 +23,4 @@ if len(vvod) > 1:
             x = x + i
     print('out: ', x)
 else:
-    print('out: ', vvod)
+    print('out: ', inp)
