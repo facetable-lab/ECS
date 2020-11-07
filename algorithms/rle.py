@@ -1,3 +1,6 @@
+import time
+start_time = time.time()
+
 inp = input('in: ')
 if len(inp) > 1:
     count = 1
@@ -25,3 +28,5 @@ if len(inp) > 1:
     print('out: ', ones)
 else:
     print('out: ', inp)
+
+print("--- %s seconds ---" % (time.time() - start_time))
