@@ -6,7 +6,7 @@ if len(inp) > 1:
     for i in inp:
         if i != prev:
             if prev:
-                entry = ''
+                # entry = ''
                 entry = str(count) + prev
                 lst.append(entry)
             count = 1
@@ -14,13 +14,14 @@ if len(inp) > 1:
         else:
             count += 1
     else:
-        entry = str(count) + i
+        # entry = str(count) + i
+        entry = str(count) + prev
         lst.append(entry)
     ones = ''.join(lst)
-    x = ''
-    for i in ones:
-        if i != '1':
-            x = x + i
-    print('out: ', x)
+    # x = ''
+    # for i in ones:
+    #    if i != '1':
+    #        x = x + i
+    print('out: ', ones)
 else:
     print('out: ', inp)
